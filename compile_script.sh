@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc ".temp.c"  &> ".compile.log"
+g++ ".temp.c"  &> ".compile.log"
 if [ $? -ne 0 ] 
 then
 sed -i "s/‘/\"/g" ".compile.log"
